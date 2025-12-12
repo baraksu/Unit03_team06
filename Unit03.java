@@ -1,5 +1,6 @@
 public class Unit03{
-    
+
+    // Yotam
     public static int shiftRight(int num)    {
     if (num < 0 || num > 9999)
         return -1;
@@ -17,6 +18,8 @@ public class Unit03{
         return newNum; 
         }
     }
+
+    //Yotam
     public static int shiftRight(int num, int k) {
     int newNum = 0;
     if (num < 1000 || num > 9999)
@@ -41,7 +44,66 @@ public class Unit03{
     else 
         return -1;
     return newNum;
-}
+    }  
+
+    // Yotam
+    public static int shiftRight2(int num, int k) {
+    int digits = 0;
+    if (num >= 0 && num < 10)
+            digits = 1;
+    else if (num > 9 && num < 100)
+            digits = 2;
+    else if (num > 99 && num < 1000)
+            digits = 3;
+    else if (num > 999 && num < 10000)
+            digits = 4;
+    else
+        return -1;
+    if (k > digits)
+        return -1;
+    int newNum = 0;
+    if (k == 1) {
+        int lastDigit = num % 10;
+        newNum = num / 10;
+        switch (digits) {
+            case 1: newNum = num;
+                break;
+            case 2: newNum = lastDigit*10 + newNum;
+                break;
+            case 3: newNum = lastDigit*100 + newNum;
+                break;
+            case 4: newNum = lastDigit*1000 + newNum;
+                break;
+        }
+    }
+    else if (k == 2) {
+        int lastDigits = num % 100;
+        newNum = num / 100;
+        switch (digits) {
+            case 2: newNum = num;
+                break;
+            case 3: newNum = lastDigits*10 + newNum;
+                break;
+            case 4: newNum = lastDigits*100 + newNum;
+                break;
+        }
+    }
+    else if (k == 3) {
+        int lastDigits = num % 1000;
+        newNum = num / 1000;
+        switch (digits) {
+            case 3: newNum = num;
+                break;
+            case 4: newNum = lastDigits*10 + newNum;
+                break;
+        }
+    }
+    else if (k == 4 || k == 0)
+        newNum = num; 
+    else 
+        return -1;
+    return newNum;
+    }
    
     public static int shiftLeft(int num)    {
         return -1;
