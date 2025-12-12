@@ -36,7 +36,7 @@ public class Unit03{
         newNum = num / 1000;
         newNum = lastDigits*10 + newNum;
     }
-    else if (k == 4)
+    else if (k == 4 || k == 0)
         newNum = num; 
     else 
         return -1;
