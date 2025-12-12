@@ -81,22 +81,22 @@ public class Unit03Tester
    
    @Test
     public void testShiftRight907By1v2(){
-        assertEquals(790, Unit03.shiftRight(907, 1));
+        assertEquals(790, Unit03.shiftRight2(907, 1));
     }
    
    @Test
     public void testShiftRight907By3(){
-        assertEquals(907, Unit03.shiftRight(907, 3));
+        assertEquals(907, Unit03.shiftRight2(907, 3));
     }
    
    @Test
     public void testShiftRight50By5(){
-        assertEquals(-1, Unit03.shiftRight(50, 5));
+        assertEquals(-1, Unit03.shiftRight2(50, 5));
     }
    
    @Test
     public void testShiftRightNegative510By2(){
-        assertEquals(-1, Unit03.shiftRight(-510, 2));
+        assertEquals(-1, Unit03.shiftRight2(-510, 2));
     }
    
    @Test
