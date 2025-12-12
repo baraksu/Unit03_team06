@@ -17,9 +17,31 @@ public class Unit03{
         return newNum; 
         }
     }
-    public static int shiftRight(int num, int k){
+    public static int shiftRight(int num, int k) {
+    int newNum = 0;
+    if (num < 1000 || num > 9999)
         return -1;
+    if (k == 1) {
+        int lastDigit = num % 10;
+        newNum = num / 10;
+        newNum = lastDigit*1000 + newNum;
     }
+    else if (k == 2) {
+        int lastDigits = num % 100;
+        newNum = num / 100;
+        newNum = lastDigits*100 + newNum;
+    }
+    else if (k == 3) {
+        int lastDigits = num % 1000;
+        newNum = num / 1000;
+        newNum = lastDigits*10 + newNum;
+    }
+    else if (k == 4)
+        newNum = num; 
+    else 
+        return -1;
+    return newNum;
+}
    
     public static int shiftLeft(int num)    {
         return -1;
