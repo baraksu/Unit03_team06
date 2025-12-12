@@ -33,8 +33,19 @@ public class Unit03{
     public static String shiftLeft(String s)    {
         return "";
     }
-    public static String shiftLeft(String s, int k)    {
-        return "";
+    public static String shiftLeft(String s, int k){
+        if (s.length() <= 2) {
+            return s;
+        }
+        int n = s.length();
+        k = k % n; 
+        if (k == 0) {
+            return s;
+        }
+        String movedPart = s.substring(0, k);
+        String remainder = s.substring(k);
+        s = remainder + movedPart;
+        return s;
     }
     public static String shiftRight(String s, int k)    {
         return "";
