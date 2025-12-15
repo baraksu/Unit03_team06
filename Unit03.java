@@ -115,7 +115,7 @@ public class Unit03{
         return "";
     }
     public static String shiftLeft(String s)    {
-        return "";
+        return shiftLeft(s,1);
     }
     public static String shiftLeft(String s, int k){
         if (s.length() <= 2) {
