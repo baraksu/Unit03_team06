@@ -120,7 +120,7 @@ public class Unit03{
     }
     //eitan
     public static String shiftLeft(String s, int k){
-        if (s.length() <= 2) {
+        if (s.length() < 2) {
             return s;
         }
         int n = s.length();
@@ -135,7 +135,7 @@ public class Unit03{
     }
     //eitan
     public static String shiftRight(String s, int k)    {
-        if (s.length() <= 2) {
+        if (s.length() < 2) {
             return s;
         }
         int n = s.length();
@@ -143,11 +143,12 @@ public class Unit03{
         if (k == 0) {
             return s;
         }
-        String movedPart = s.substring(k+1);
-        String remainder = s.substring(0,k+1);
+        String movedPart = s.substring(n-k);
+        String remainder = s.substring(0,n-k);
         s = movedPart + remainder;
         return s;  
     }
+}
     public static int countWords(String s)    {
         return -1;
     }
