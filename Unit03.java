@@ -162,3 +162,34 @@ public class Unit03{
     } 
     
 }
+// Ariel
+public static int shiftLeft(int num){
+        if (num < 1000 || num > 9999)
+            return -1;
+        else{
+            String num_str = String.valueOf(num);
+            String first_digit = num_str.substring(0, 1);
+            String rest_of_digits = num_str.substring(1);
+            String new_num_str = rest_of_digits + first_digit;
+            return Integer.parseInt(new_num_str);
+        }
+}
+// Ariel
+public static int shiftLeft(int num, int k){
+        if (num < 1000 || num > 9999){
+            return -1;
+        }else{
+            String num_str = String.valueOf(num);
+            String first_digits = num_str.substring(0, k);
+            String rest_of_digits = num_str.substring(k);
+            String new_num_str = rest_of_digits + first_digits;
+            return Integer.parseInt(new_num_str);
+            }
+}
+// Ariel
+public static String shiftRight(String s){
+        int len = s.length();
+        String last_char = s.substring(len - 1);
+        String rest_of_characters = s.substring(0, len - 1);
+        return last_char + rest_of_characters;
+}
