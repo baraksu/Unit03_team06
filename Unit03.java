@@ -114,6 +114,11 @@ public class Unit03{
     public static String shiftRight(String s)    {
         return "";
     }
+    //eitan
+    public static String shiftLeft(String s)    {
+        return shiftLeft(s,1);
+    }
+    //eitan
     public static String shiftLeft(String s, int k){
         if (s.length() <= 2) {
             return s;
@@ -128,6 +133,7 @@ public class Unit03{
         s = remainder + movedPart;
         return s;
     }
+    //eitan
     public static String shiftRight(String s, int k)    {
         if (s.length() <= 2) {
             return s;
