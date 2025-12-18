@@ -114,9 +114,6 @@ public class Unit03{
     public static String shiftRight(String s)    {
         return "";
     }
-    public static String shiftLeft(String s)    {
-        return shiftLeft(s,1);
-    }
     public static String shiftLeft(String s, int k){
         if (s.length() <= 2) {
             return s;
@@ -132,7 +129,18 @@ public class Unit03{
         return s;
     }
     public static String shiftRight(String s, int k)    {
-        return "";
+        if (s.length() <= 2) {
+            return s;
+        }
+        int n = s.length();
+        k = k % n; 
+        if (k == 0) {
+            return s;
+        }
+        String movedPart = s.substring(k+1);
+        String remainder = s.substring(0,k+1);
+        s = movedPart + remainder;
+        return s;  
     }
     public static int countWords(String s)    {
         return -1;
