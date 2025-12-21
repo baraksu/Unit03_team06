@@ -244,10 +244,11 @@ public class Unit03Tester
         assertEquals("abcd", Unit03.shiftRight("abcd", 4));
     }
    
-   @Test
+  @Test
     public void testShiftRightStringHelloBy7(){
-        assertEquals("ohell", Unit03.shiftRight("hello", 7));
+        assertEquals("lohel", Unit03.shiftRight("hello", 7));
     }
+   
    
    @Test
     public void testShiftRightStringSingleCharBy3(){
