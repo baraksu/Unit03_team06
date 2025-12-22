@@ -105,19 +105,7 @@ public class Unit03{
     return newNum;
     }
    
-    public static int shiftLeft(int num)    {
-        return -1;
-    }
-    public static int shiftLeft(int num, int k){
-        return -1;
-    }
-    public static String shiftRight(String s)    {
-        return "";
-    }
-    //eitan
-    public static String shiftLeft(String s)    {
-        return shiftLeft(s,1);
-    }
+
     //eitan
     public static String shiftLeft(String s, int k){
         if (s.length() < 2) {
@@ -149,18 +137,7 @@ public class Unit03{
         return s;  
     }
 }
-    public static int countWords(String s)    {
-        return -1;
-    }
-    public static int countParts(String s, char separator)    {
-        return -1;
-    }
-    public static String getParts(String s, char separator)    {
-        return "";
-    }
-    public static void printParts(String s, char separator)    {
-        
-    } 
+
     
 }
 // Ariel
