@@ -105,7 +105,10 @@ public class Unit03{
     return newNum;
     }
    
-
+    //eitan
+    public static String shiftLeft(String s)    {
+        return shiftLeft(s,1);
+    }
     //eitan
     public static String shiftLeft(String s, int k){
         if (s.length() < 2) {
