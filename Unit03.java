@@ -174,3 +174,61 @@ public static String shiftRight(String s){
         String rest_of_characters = s.substring(0, len - 1);
         return last_char + rest_of_characters;
 }
+//Saghi
+import java.util.*;
+public class COUNTINGWORDS{
+  public static int countWords(String s){
+      if(s.isEmpty()){
+         return 0;
+        }
+      int firstSpace = s.indexOf(' ');
+      if(firstSpace == -1){
+          return 1;
+      }
+      int secondSpace = s.indexOf(' ' , firstSpace + 1);
+      if(secondSpace == -1){
+          return 2;
+      }
+      return 3;  
+        }
+}
+//Saghi
+import java.util.*;
+public class COUNTPARTS{
+    public static int countParts(String s, char separator){
+     if(s.isEmpty()){
+         return 0;
+     }
+     int firstIndex = s.indexOf(separator);
+     if(firstIndex == -1){
+         return 1;
+     }
+     int secondIndex = s.indexOf(separator, firstIndex + 1);
+     if(secondIndex == -1){
+         return 2;
+     }
+     return 3;
+    }
+}
+//Saghi
+import java.util.*;
+public class PRINTPARTS{
+    public static void printParts(String s, char separator){
+    if(s.isEmpty()){
+    return;
+    }
+    int firstIndex = s.indexOf(separator);
+    if(firstIndex == -1){
+    System.out.println(s);
+    return;
+    }
+    System.out.println(s.substring(0, firstIndex));
+    int secondIndex = s.indexOf(separator, firstIndex + 1);
+    if(secondIndex == -1){
+    System.out.println(s.substring(firstIndex + 1));
+    return;
+    }
+    System.out.println(s.substring(firstIndex + 1, secondIndex));
+    System.out.println(s.substring(secondIndex + 1));
+}
+}
