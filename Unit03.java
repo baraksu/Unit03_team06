@@ -139,11 +139,7 @@ public class Unit03{
         s = movedPart + remainder;
         return s;  
     }
-}
-
-    
-}
-// Ariel
+    // Ariel
 public static int shiftLeft(int num){
         if (num < 1000 || num > 9999)
             return -1;
@@ -189,8 +185,7 @@ public static String shiftRight(String s){
       }
       return 3;  
         }
-}
-//Saghi
+        //Saghi
     public static int countParts(String s, char separator){
      if(s.isEmpty()){
          return 0;
@@ -205,8 +200,7 @@ public static String shiftRight(String s){
      }
      return 3;
     }
-}
-//Saghi
+    //Saghi
     public static void printParts(String s, char separator){
     if(s.isEmpty()){
     return;
@@ -225,4 +219,13 @@ public static String shiftRight(String s){
     System.out.println(s.substring(firstIndex + 1, secondIndex));
     System.out.println(s.substring(secondIndex + 1));
 }
+    public static String getParts(String s, char seperator){
+        return s;
+    }
+
+
 }
+
+
+
+
