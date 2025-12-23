@@ -226,7 +226,24 @@ public static String shiftRight(String s){
     System.out.println(s.substring(firstIndex + 1, secondIndex));
     System.out.println(s.substring(secondIndex + 1));
 }
-    
+    public static String getParts(String s, char separator) {
+        if (s.isEmpty()) return "";
+
+        int firstIndex = s.indexOf(separator);
+        if (firstIndex == -1) return s;
+
+        String part1 = s.substring(0, firstIndex);
+        int secondIndex = s.indexOf(separator, firstIndex + 1);
+
+        if (secondIndex == -1) {
+            String part2 = s.substring(firstIndex + 1);
+            return part1 + "\n" + part2;
+        }
+
+        String part2 = s.substring(firstIndex + 1, secondIndex);
+        String part3 = s.substring(secondIndex + 1);
+        return part1 + "\n" + part2 + "\n" + part3;
+    }
 
 }
 
