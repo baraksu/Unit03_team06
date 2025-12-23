@@ -175,8 +175,6 @@ public static String shiftRight(String s){
         return last_char + rest_of_characters;
 }
 //Saghi
-import java.util.*;
-public class COUNTINGWORDS{
   public static int countWords(String s){
       if(s.isEmpty()){
          return 0;
@@ -193,8 +191,6 @@ public class COUNTINGWORDS{
         }
 }
 //Saghi
-import java.util.*;
-public class COUNTPARTS{
     public static int countParts(String s, char separator){
      if(s.isEmpty()){
          return 0;
@@ -211,8 +207,6 @@ public class COUNTPARTS{
     }
 }
 //Saghi
-import java.util.*;
-public class PRINTPARTS{
     public static void printParts(String s, char separator){
     if(s.isEmpty()){
     return;
