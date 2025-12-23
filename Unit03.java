@@ -226,6 +226,7 @@ public static String shiftRight(String s){
     System.out.println(s.substring(firstIndex + 1, secondIndex));
     System.out.println(s.substring(secondIndex + 1));
 }
+    //eitan
     public static String getParts(String s, char separator) {
         if (s.isEmpty()) return "";
 
