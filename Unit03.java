@@ -226,10 +226,7 @@ public static String shiftRight(String s){
     System.out.println(s.substring(firstIndex + 1, secondIndex));
     System.out.println(s.substring(secondIndex + 1));
 }
-    public static String getParts(String s, char seperator){
-        return s;
-    }
-
+    
 
 }
 
